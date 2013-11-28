@@ -1,0 +1,7 @@
+# build x9wm - Giuseppe Altea (c)2010+others a w9wm fork/twist
+gcc -O3 x9wm.c -lX11 -lXext  -o x9wm
+rm /usr/bin/x9wm 
+# copy the actual window manager 
+cp x9wm /usr/bin/x9wm
+
+
