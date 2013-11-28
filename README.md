@@ -7,16 +7,27 @@ libx11-dev
 
 to install:
 1 install libx11-dev x11 developer files, install gmrun
+
 2 see and run the build file
+
 3 Install feh for wallpaper changing example: feh --bg-fill '/home/foo/foowall.png'
+
 3.1  add in .xinitrc: sh $HOME/.fehbg &
+
 4 makes sure you have a three button mouse
+
 5 add it to your xsessions as a window manger
+
 6 login and select x9wm as the window manager
+
 7 enjoy the smallest / fastest window manager for Linux 
+
 8 install rxvt-unicode
+
 8.1 urxvt is now the default shell in menu New
+
 9 Deleted xoot warpper, aterm is very nice, cute but is not friend of utf-8 :/
+
 10 please read 
 
 Definition: w9wm: Enhanced window manager based on 9wm
