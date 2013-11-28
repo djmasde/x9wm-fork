@@ -6,6 +6,7 @@ is compiled as a single static binary and linked against
 libx11-dev 
 
 to install:
+
 1 install libx11-dev x11 developer files, install gmrun
 
 2 see and run the build file
