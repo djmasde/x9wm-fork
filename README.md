@@ -40,7 +40,7 @@ easier modification and fastest remote desktop for VNC / RDP desktop sessions
 for multi-admin remote administration for Windows / Linux and Mac systems from 
 a single remote location / interface.
 
-Added Two new workspaces, the maximus hidden windows is 36, 
+Added Two new workspaces =14, the maximus hidden windows is 36, 
 Added a menu launcher: Run..
 
 
