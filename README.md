@@ -9,6 +9,8 @@ to install:
 
 1 install libx11-dev x11 developer files, install gmrun
 
+1.1 in Slackware these headers is present in the default install :)
+
 2 see and run the build file
 
 3 Install feh for wallpaper changing example: feh --bg-fill '/home/foo/foowall.png'
