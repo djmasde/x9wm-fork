@@ -33,6 +33,12 @@ to install:
 
 10 please read 
 
+11 Hold both "shift" and "left ctrl" keys and press button 1.  
+
+x9wm will then  display  a  menu
+
+that allows you to exec programs specified in the $HOME/.x9wmrc
+
 Definition: w9wm: Enhanced window manager based on 9wm
 w9wm is a quick and dirty hack based on 9wm. 
 It provides support for virtual screens as well as for keyboard bindings. 
@@ -44,5 +50,6 @@ a single remote location / interface.
 
 Added Two new workspaces =14, the maximus hidden windows is 36, 
 Added a menu launcher: Run..
+Added a .x9wmrc menu
 
 See screenshot: http://a.pomf.se/g790a.png
