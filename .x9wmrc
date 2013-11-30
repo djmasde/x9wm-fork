@@ -1,0 +1,18 @@
+--- browsers --
+qupzilla
+firefox
+uxterm
+urxvt
+--- system ----
+wmwave
+pcmanfm
+--- desktop ---
+gimp
+gpicview
+leafpad
+xcalc
+xpdf
+--- network ---
+wicd-client
+wireshark
+ethercap
