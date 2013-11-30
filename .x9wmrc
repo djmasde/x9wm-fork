@@ -1,9 +1,9 @@
 --- browsers --
 qupzilla
 firefox
+--- system ----
 uxterm
 urxvt
---- system ----
 wmwave
 pcmanfm
 --- desktop ---
@@ -13,6 +13,4 @@ leafpad
 xcalc
 xpdf
 --- network ---
-wicd-client
-wireshark
-ethercap
+wicd-gtk
