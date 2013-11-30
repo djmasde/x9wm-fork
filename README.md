@@ -43,5 +43,4 @@ a single remote location / interface.
 Added Two new workspaces =14, the maximus hidden windows is 36, 
 Added a menu launcher: Run..
 
-
-
+See screenshot: http://a.pomf.se/g790a.png
