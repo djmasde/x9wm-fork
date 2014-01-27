@@ -168,7 +168,7 @@ char    *argv[];
 	    if (n > 0 && n <= 14)
 	      numvirtuals = n;
 	    else
-	      fprintf(stderr, "9wm: wrong number of virtual screens, must be between 1 and 12\n");
+	      fprintf(stderr, "9wm: wrong number of virtual screens, must be between 1 and 14\n");
 	  }
         else if (argv[i][0] == '-')
             usage();
