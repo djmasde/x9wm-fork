@@ -11,7 +11,7 @@ to install:
 3 Install feh for wallpaper changing example: feh --bg-fill '/home/foo/foowall.png'
 3.1  add in .xinitrc: sh $HOME/.fehbg &
 4 makes sure you have a three button mouse
-5 add it to your xsessions as a window manger
+5 add it to your xsessions as a window manager
 6 login and select x9wm as the window manager
 7 enjoy the smallest / fastest window manager for Linux 
 8 install rxvt-unicode
