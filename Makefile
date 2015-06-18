@@ -1,21 +1,21 @@
-# make x9wm - Jacob Adams (c)2015+others a w9wm fork/twist
+# make 99wm - Jacob Adams (c)2015+others a x9wm fork/twist
 
 CC := gcc
 DESTDIR := /usr/local/bin
 LIBS := -lX11 -lXext
-FILES := x9wm.c x9wm.h
-
+FILES := 99wm.c 99wm.h
+PROG := 99wm
 x9wm: ${FILES}
-	${CC} -O3 x9wm.c ${LIBS} -o x9wm
+	${CC} -O3 99wm.c ${LIBS} -o ${PROG}
 
 debug: ${FILES}
-	${CC} -Wall -g x9wm ${LIBS} -o debug
+	${CC} -Wall -g 99wm.c ${LIBS} -o debug
 
 uninstall:
-	rm ${DESTDIR}/x9wm 
+	rm ${DESTDIR}/${PROG}
 
 install: build
-	cp x9wm ${DESTDIR}/x9wm
+	cp ${PROG} ${DESTDIR}/${PROG}
 
 clean:
-	rm x9wm debug
+	rm ${PROG} debug
