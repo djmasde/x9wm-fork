@@ -1,3 +1,4 @@
+#!/bin/sh
 # build x9wm - Giuseppe Altea (c)2010+others a w9wm fork/twist
 : ${CC=gcc}
 : ${DESTDIR=/usr/local/bin}
