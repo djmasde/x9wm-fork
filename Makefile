@@ -18,4 +18,4 @@ install: build
 	cp x9wm ${DESTDIR}/x9wm
 
 clean:
-	rm x9wm
+	rm x9wm debug
