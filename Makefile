@@ -5,7 +5,7 @@ DESTDIR := /usr/local/bin
 LIBS := -lX11 -lXext
 FILES := 99wm.c 99wm.h
 PROG := 99wm
-x9wm: ${FILES}
+99wm: ${FILES}
 	${CC} -O3 99wm.c ${LIBS} -o ${PROG}
 
 debug: ${FILES}

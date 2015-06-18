@@ -50,10 +50,10 @@
 #include <X11/X.h>
 #include <X11/keysym.h>
 #include <X11/Xproto.h>
-#include "x9wm.h"
 #include <unistd.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include "99wm.h"
 
 #ifdef  DEBUG_EV
 #include "showevent/ShowEvent.c"
