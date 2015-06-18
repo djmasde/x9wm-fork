@@ -1,32 +1,37 @@
-//
 // licensed as w9wm 9wm 
 // w9wm Version 0.4.2
 // Copyright 2000 Benjamin Drieu.
-            
+
 // with large portions of code
 // Copyright 1994 David Hogan.
-                                      
+
 // this version is single source file with a
 // red mouse pointer and smaller object file
 // for xoot, embedded, mini rescue builds...
-// x9wm single source file version with 
+// x9wm single source file version with
 // additional code for forming, imaging, movies...
 //
 // X9wm is Copyright 2005 Joseph Altea.
 // Built for slitaz linux trunk build ..
 // Xoot 0.1 LINUX system
+//
 // X9wm fork Copyright 2013 Helmuth Schmelzer 
 // Added two new workspaces
 // Added launcher/run, in this case gmrun, etc
 // Removed xoot warpper for aterm, aterm is not friend of utf-8 :/
 // Now for default urxvt is the default shell
 //
+// 99wm fork of X9wm Copyright 2015 Jacob Adams
+// Modernize build system
+// Remove launcher/run
 // SEE http://www.drieu.org/code/w9wm/README
 // for original w9wm code 
 // and google plan 9 code for Dave Hogans 9wm 
 // SEE this for more info http://unauthorised.org/dhog/9wm.html
 // SEE www.skyfalcon.co.cc for x9wm development NEWS
 //
+//   www.skyfalcon.co.cc
+
 #include <stdio.h>
 #include <signal.h>
 #include <errno.h>
@@ -45,10 +50,10 @@
 #include <X11/X.h>
 #include <X11/keysym.h>
 #include <X11/Xproto.h>
-#include "x9wm.h"
 #include <unistd.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include "99wm.h"
 
 #ifdef  DEBUG_EV
 #include "showevent/ShowEvent.c"
@@ -2436,7 +2441,6 @@ Menu    b2menu =
 
 char    *b3items[B3FIXED+MAXHIDDEN+1] = 
 {
-    "Run",
     "New",
     "Reshape",
     "Move",
@@ -2559,24 +2563,21 @@ XButtonEvent *e;
     Client *c;
     cmapfocus(0);
     switch (n = menuhit(e, &b3menu)) {
-    case 0:     /* Run */
-        launcher();
-        break;
-    case 1:     /* New */
+    case 0:     /* New */
         spawn();
         break;
-    case 2:     /* Reshape */
+    case 1:     /* Reshape */
         reshape(selectwin(1, 0));
         break;
-    case 3:     /* Move */
+    case 2:     /* Move */
         move(selectwin(0, 0));
         break;
-    case 4:     /* Delete */
+    case 3:     /* Delete */
         shift = 0;
         c = selectwin(1, &shift);
         delete(c, shift);
         break;
-    case 5:     /* Hide */
+    case 4:     /* Hide */
         hide(selectwin(1, 0));
         break;
     default:    /* unhide window */
