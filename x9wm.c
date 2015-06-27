@@ -2437,7 +2437,7 @@ Menu    b2menu =
 
 char    *b3items[B3FIXED+MAXHIDDEN+1] = 
 {
-    "Run".
+    "Run",
     "New",
     "Reshape",
     "Move",
