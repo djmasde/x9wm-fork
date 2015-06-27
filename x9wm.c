@@ -21,16 +21,12 @@
 // Removed xoot warpper for aterm, aterm is not friend of utf-8 :/
 // Now for default urxvt is the default shell
 //
-// 99wm fork of X9wm Copyright 2015 Jacob Adams
-// Modernize build system
-// Remove launcher/run
 // SEE http://www.drieu.org/code/w9wm/README
 // for original w9wm code 
 // and google plan 9 code for Dave Hogans 9wm 
 // SEE this for more info http://unauthorised.org/dhog/9wm.html
 // SEE www.skyfalcon.co.cc for x9wm development NEWS
 //
-//   www.skyfalcon.co.cc
 
 #include <stdio.h>
 #include <signal.h>
@@ -53,7 +49,7 @@
 #include <unistd.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include "99wm.h"
+#include "x9wm.h"
 
 #ifdef  DEBUG_EV
 #include "showevent/ShowEvent.c"
@@ -2441,6 +2437,7 @@ Menu    b2menu =
 
 char    *b3items[B3FIXED+MAXHIDDEN+1] = 
 {
+    "Run".
     "New",
     "Reshape",
     "Move",
@@ -2563,21 +2560,24 @@ XButtonEvent *e;
     Client *c;
     cmapfocus(0);
     switch (n = menuhit(e, &b3menu)) {
-    case 0:     /* New */
+    case 0:	/* Run */
+ 	launcher();
+	break;
+    case 1:     /* New */
         spawn();
         break;
-    case 1:     /* Reshape */
+    case 2:     /* Reshape */
         reshape(selectwin(1, 0));
         break;
-    case 2:     /* Move */
+    case 3:     /* Move */
         move(selectwin(0, 0));
         break;
-    case 3:     /* Delete */
+    case 4:     /* Delete */
         shift = 0;
         c = selectwin(1, &shift);
         delete(c, shift);
         break;
-    case 4:     /* Hide */
+    case 5:     /* Hide */
         hide(selectwin(1, 0));
         break;
     default:    /* unhide window */

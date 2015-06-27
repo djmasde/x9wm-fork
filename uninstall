@@ -2,5 +2,5 @@
 # delete the actual window manager 
 : ${DESTDIR=/usr/local/bin}
 
-rm $DESTDIR/99wm
+rm $DESTDIR/x9wm
 
