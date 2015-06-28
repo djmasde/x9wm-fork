@@ -3,13 +3,13 @@
 CC := gcc
 DESTDIR := /usr/local/bin
 LIBS := -lX11 -lXext
-FILES := 99wm.c 99wm.h
-PROG := 99wm
+FILES := x9wm.c x9wm.h
+PROG := x9wm
 99wm: ${FILES}
-	${CC} -O3 99wm.c ${LIBS} -o ${PROG}
+	${CC} -O3 x9wm.c ${LIBS} -o ${PROG}
 
 debug: ${FILES}
-	${CC} -Wall -g 99wm.c ${LIBS} -o debug
+	${CC} -Wall -g x9wm.c ${LIBS} -o debug
 
 uninstall:
 	rm ${DESTDIR}/${PROG}
